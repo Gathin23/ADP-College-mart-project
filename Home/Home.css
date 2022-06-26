@@ -266,8 +266,14 @@ section {
 }
 
 
+.one {
+    background-image: url('./images/white.png');
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-size: 100% 100%;
+}
 .two {
-    background-image: url('./images/annauniv.jpg');
+    background-image: url('./images/desc.jpg');
     background-repeat: no-repeat;
     background-attachment: absolute;
     background-size: 100% 100%;
@@ -279,12 +285,120 @@ section {
     background-attachment: absolute;
     background-size: 100% 100%;
 }
-.homey{
-    height: 600px;
-    width: 1000px;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 0 auto;
-    border-radius: 20%;
 
+
+.homesecimg{
+    position: relative;
+    left: 230px;
+    top: 75px;
+    height: 800px;
+    width: 800px;
+    
+    border-radius: 20%;
+}
+
+.annauniv {
+    border-radius: 2%;
+}
+
+.homesec {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 200px;
+    top: 20px;
+    height: 400px;
+    width: 650px;
+    text-align: center;   
+}
+
+.home-heading {
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 4.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+
+.home-text {
+    font-family: "Montserrat-Black", sans-serif;
+    padding-top: 40px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: rgb(8, 118, 63);
+}
+
+
+
+
+/* CSS */
+.button-85 {
+  font-size: large;
+  color: yellow;
+  margin-top: 40px;  
+  padding: 1em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
  
